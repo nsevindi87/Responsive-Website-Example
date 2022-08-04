@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+/* Base Style */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --main: #047aed;
+    --text: #fff;
+}
+
+body{
+    font-family: 'lato', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+h1,h2{
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+p{
+    margin: 10px 0;
+}   
+
+img{
+    width: 100%;
+}
+
+/* Navbar Section */
+.navbar{
+    background-color: var(--main);
+    color: var(--text);
+    height: 70px;
+}
+
+.navbar a{
+    color: var(--text);
+    padding: 10px;
+    margin: 0 5px;
+    border-bottom: 0.2rem solid transparent;
+    transition: all 0.4s ease;
+}
+
+.navbar a:hover{
+    border-color: var(--text);
+}
+
+.navbar .flex{
+    justify-content: space-between;
+}
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto; /* For navbar margin-top to hidden. I couldnt understand!  */
+    padding: 0 40px;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
