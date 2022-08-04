@@ -9,7 +9,7 @@
 
 :root{
     --main: #047aed;
-    --text: #fff;
+    --second: #fff;
 }
 
 body{
@@ -49,7 +49,7 @@ img{
 }
 
 .navbar a{
-    color: var(--text);
+    color: var(--second);
     padding: 10px;
     margin: 0 5px;
     border-bottom: 0.2rem solid transparent;
@@ -57,13 +57,59 @@ img{
 }
 
 .navbar a:hover{
-    border-color: var(--text);
+    border-color: var(--second);
 }
 
 .navbar .flex{
     justify-content: space-between;
 }
 
+/* Showcase */
+
+.showcase{
+    height: 400px;
+    background-color: var(--main);
+    color: var(--text);
+    position: relative;
+}
+
+.showcase h1{
+    font-size: 40px;
+}
+
+.showcase p{
+    margin: 20px 0;
+}
+
+.showcase .grid{
+    grid-template-columns: 55% 45%;
+    gap: 30px;
+    overflow: visible;
+}
+
+.showcase-form{
+    position: relative;
+    top: 60px;
+    height: 350px;
+    width: 400px;
+    padding: 40px;
+    z-index: 1000;
+    justify-self: flex-end;
+}
+
+.showcase-form .form-control{
+    margin: 30px 0;
+}
+
+.showcase-form input[type='text'],
+.showcase-form input[type='email']{
+    border: 0;
+    border-bottom: 1px solid #b4becb;
+}
+
+
+
+/* Utilities */
 .container{
     max-width: 1100px;
     margin: 0 auto;
@@ -71,9 +117,27 @@ img{
     padding: 0 40px;
 }
 
+.card{
+    background-color: var(--second);
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+    padding: 20px;
+    margin: 10px;
+}
+
 .flex{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* to fit its container showcase '400px' */
 }
