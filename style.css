@@ -114,7 +114,20 @@ img{
     outline: none;
 }
 
-
+.showcase::before,
+.showcase::after{
+    content: "";
+    position: absolute;
+    height: 100px;
+    bottom: -70px;
+    right: 0;
+    left: 0;
+    background: var(--second);
+    transform: skewY(-3deg);
+    --webkit-transform: skewY(-3deg);
+    -moz-transform: skewY(-3deg);
+    -ms-transform: skewY(-3deg);
+}
 
 /* Utilities */
 .container{
@@ -146,6 +159,10 @@ img{
 .btn-outline{
     background-color: transparent;
     border: 1px var(--second) solid;
+}
+
+.btn:hover{
+    transform: scale(0.98);
 }
 
 .flex{
