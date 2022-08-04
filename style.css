@@ -105,6 +105,13 @@ img{
 .showcase-form input[type='email']{
     border: 0;
     border-bottom: 1px solid #b4becb;
+    width: 100%;
+    padding: 3px;
+    font-size: 16px;
+}
+
+.showcase-form input:focus{
+    outline: none;
 }
 
 
@@ -124,6 +131,21 @@ img{
     box-shadow: 0 3px 10px rgba(0,0,0,0.5);
     padding: 20px;
     margin: 10px;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    background: var(--main);
+    color: var(--second);
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-outline{
+    background-color: transparent;
+    border: 1px var(--second) solid;
 }
 
 .flex{
