@@ -35,6 +35,27 @@
     transform: scale(0.98);
 }
 
+/* Backgrounds & colored buttons */
+.bg-primary, .btn-primary{
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.bg-secondary, .btn-secondary{
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+.bg-dark, .btn-dark{
+    background-color: var(--dark-color);
+    color: #fff;
+}
+
+.bg-light, .btn-light{
+    background-color: var(--light-color);
+    color: #fff;
+}
+
 .flex{
     display: flex;
     justify-content: center;
